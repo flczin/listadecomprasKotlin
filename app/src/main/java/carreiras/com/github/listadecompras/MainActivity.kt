@@ -23,8 +23,13 @@ class MainActivity : ComponentActivity() {
         val button = findViewById<Button>(R.id.button)
         val editText = findViewById<EditText>(R.id.editText)
         val textView = findViewById<TextView>(R.id.titulo)
+        val btnClear = findViewById<Button>(R.id.clearList)
 
         textView.text = "Lista de Compras";
+
+        btnClear.setOnClickListener {
+            itemsAdapter.clearList()
+        }
 
         button.setOnClickListener {
             if (editText.text.isEmpty()) {

@@ -48,6 +48,12 @@
         android:background="@color/purple_200"
         android:text="inserir" />
 
+    <Button
+        android:id="@+id/clearList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar lista" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="wrap_content"
